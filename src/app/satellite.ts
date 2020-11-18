@@ -13,4 +13,8 @@ launchDate: string;
         this.operational = operational;
         this.launchDate = launchDate;
     }
+
+    shouldShowWarning(): boolean {
+        return this.type.toLowerCase() === 'space debris';
+    }
 }
